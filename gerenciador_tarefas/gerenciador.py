@@ -1,11 +1,12 @@
 from enum import Enum
-from os import remove
 
 # from tkinter.tix import STATUS
 from uuid import UUID, uuid4
 
 from fastapi import FastAPI, status
 from pydantic import BaseModel, constr
+
+# from os import remove
 
 
 class EstadosPossiveis(str, Enum):
