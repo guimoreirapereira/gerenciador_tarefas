@@ -1,6 +1,6 @@
 from enum import Enum
 from os import remove
-from tkinter.tix import STATUS
+# from tkinter.tix import STATUS
 from uuid import UUID, uuid4
 
 from fastapi import FastAPI, status
@@ -62,9 +62,9 @@ def criar(tarefa: TarefaEntrada):
     return nova_tarefa
 
 
-@app.delete("/tarefas/{tarefa_id}", status_code=status.HTTP_204_NO_CONTENT)
-def remove(tarefa_id: int):
-    for tarefa in TAREFAS:
-        x = tarefa.get("id")
-        if x == tarefa_id:
-            TAREFAS.remove(tarefa)
+# @app.delete("/tarefas/{tarefa_id}", status_code=status.HTTP_204_NO_CONTENT)
+# def remove(tarefa_id: int):
+#     for tarefa in TAREFAS:
+#         x = tarefa.get("id")
+#         if x == tarefa_id:
+#             TAREFAS.remove(tarefa)
