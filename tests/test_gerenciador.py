@@ -152,10 +152,10 @@ def test_recurso_tarefas_deve_aceitar_o_verbo_delete():
     resposta = cliente.delete("/tarefas/{tarefa_id}")
     assert resposta.status_code != status.HTTP_405_METHOD_NOT_ALLOWED
 
-def test_quando_remover_uma_tarefa_codigo_de_status_retornado_deve_ser_204():
-    cliente = TestClient(app)
-    resposta = cliente.delete("/tarefas/{tarefa_id}")
-    assert resposta.status_code == status.ht.HTTP_204_NO_CONTENT
+# def test_quando_remover_uma_tarefa_codigo_de_status_retornado_deve_ser_204():
+#     cliente = TestClient(app)
+#     resposta = cliente.delete("/tarefas/{tarefa_id}")
+#     assert resposta.status_code == status.ht.HTTP_204_NO_CONTENT
 
 # def test_quando_passar_id_tarefa_deve_ser_removida():
 #     cliente = TestClient(app)
